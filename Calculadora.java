@@ -8,6 +8,17 @@ class Soma {
         return a + b;
     }
 }
+// Classe para a operação de subtração
+class Subtracao {
+    public static int executar(int a, int b) {
+        return a - b;
+    }
+
+    public static double executar(double a, double b) {
+        return a - b;
+    }
+}
+
 // Classe principal que utiliza as operações da calculadora
 public class Calculadora {
     public static void main(String[] args) {
@@ -20,6 +31,13 @@ public class Calculadora {
 
         double resultadoSomaDouble = Soma.executar(3.5, 2.1);
         System.out.println("Resultado da soma (double): " + resultadoSomaDouble);
+        
+        // Executando a operação de subtração        
+        int resultadoSubtracaoInt = Subtracao.executar(num1, num2);
+        System.out.println("Resultado da subtração (int): " + resultadoSubtracaoInt);
+
+        double resultadoSubtracaoDouble = Subtracao.executar(3.5, 2.1);
+        System.out.println("Resultado da subtração (double): " + resultadoSubtracaoDouble);
 
     }
 }
