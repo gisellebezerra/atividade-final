@@ -18,6 +18,16 @@ class Subtracao {
         return a - b;
     }
 }
+// Classe para a operação de multiplicação
+class Multiplicacao {
+    public static int executar(int a, int b) {
+        return a * b;
+    }
+
+    public static double executar(double a, double b) {
+        return a * b;
+    }
+}
 
 // Classe principal que utiliza as operações da calculadora
 public class Calculadora {
@@ -39,5 +49,11 @@ public class Calculadora {
         double resultadoSubtracaoDouble = Subtracao.executar(3.5, 2.1);
         System.out.println("Resultado da subtração (double): " + resultadoSubtracaoDouble);
 
+        // Executando a operação de multiplicação
+        int resultadoMultiplicacaoInt = Multiplicacao.executar(num1, num2);
+        System.out.println("Resultado da multiplicação (int): " + resultadoMultiplicacaoInt);
+
+        double resultadoMultiplicacaoDouble = Multiplicacao.executar(3.5, 2.1);
+        System.out.println("Resultado da multiplicação (double): " + resultadoMultiplicacaoDouble);
     }
 }
