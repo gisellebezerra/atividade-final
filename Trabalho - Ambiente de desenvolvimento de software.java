@@ -7,7 +7,7 @@ class Soma {
     public static double executar(double a, double b) {
         return a + b;
     }
-
+}
 // Classe principal que utiliza as operações da calculadora
 public class Calculadora {
     public static void main(String[] args) {
